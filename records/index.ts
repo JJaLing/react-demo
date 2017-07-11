@@ -1,0 +1,1 @@
+export { default as ChoiceRecord } from './ChoiceQuestion'
