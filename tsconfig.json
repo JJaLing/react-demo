@@ -3,7 +3,8 @@
     "compilerOptions": {
         "baseUrl": "./",
         "paths": {
-            "records": ["records"]
+            "records": ["records"],
+            "actions": ["src/redux/actions"]
         },
         "allowJs": true,
         "experimentalDecorators": true,

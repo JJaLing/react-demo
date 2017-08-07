@@ -18,11 +18,12 @@ export default class MyButtonControl extends React.Component<IMyButtonControlPro
     this.state = {
       items: List<answer>()
     }
+    this.acceptAnswer = this.acceptAnswer.bind(this)
   }
 
 
-  acceptAnswer = (result: answer) => {
-    let answers: List<answer> = this.state.items
+  acceptAnswer (result: answer) {
+    const answers: List<answer> = this.state.items
     console.log('====' + JSON.stringify(answers))
     let target: boolean = true
     let newAnswers = answers.map((answer, index) => {
